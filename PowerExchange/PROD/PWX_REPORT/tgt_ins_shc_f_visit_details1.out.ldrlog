@@ -1,0 +1,98 @@
+
+SQL*Loader: Release 12.1.0.2.0 - Production on Tue Dec 29 15:55:51 2020
+
+Copyright (c) 1982, 2014, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   /ITS_INFALX_P71/infa_shared//RNDBE_BITS_JEDI/TgtFiles/tgt_ins_shc_f_visit_details1.out.ctl
+Data File:      /ITS_INFALX_P71/infa_shared/RNDBE_BITS_JEDI/TgtFiles/tgt_ins_shc_f_visit_details1.out
+  Bad File:     /ITS_INFALX_P71/infa_shared/RNDBE_BITS_JEDI/TgtFiles/tgt_ins_shc_f_visit_details1.out.ldrreject
+  Discard File: /ITS_INFALX_P71/infa_shared/RNDBE_BITS_JEDI/TgtFiles/tgt_ins_shc_f_visit_details1.out.discard 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 10000
+Bind array:     100000 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table "JEDI_DM_RDQC"."F_VISIT_DETAILS", loaded from every logical record.
+Insert option in effect for this table: APPEND
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+SK                                  FIRST     *           CHARACTER            
+    Terminator string : '@@##@@'
+D_PROTOCOL_SK                        NEXT     *           CHARACTER            
+    Terminator string : '@@##@@'
+D_SITE_SK                            NEXT     *           CHARACTER            
+    Terminator string : '@@##@@'
+D_REGION_SK                          NEXT     *           CHARACTER            
+    Terminator string : '@@##@@'
+D_CATEGORY_SK                        NEXT     *           CHARACTER            
+    Terminator string : '@@##@@'
+D_TRIPREPORT_SK                      NEXT     *           CHARACTER            
+    Terminator string : '@@##@@'
+D_CHECKLISTITEM_SK                   NEXT     *           CHARACTER            
+    Terminator string : '@@##@@'
+ANSWER                               NEXT  4000           CHARACTER            
+    Terminator string : '@@##@@'
+COMMENT1                             NEXT  4000           CHARACTER            
+    Terminator string : '@@##@@'
+    SQL string for column : "REPLACE(:COMMENT1,CHR(126),CHR(13))"
+COMMENT2                             NEXT  4000           CHARACTER            
+    Terminator string : '@@##@@'
+    SQL string for column : "REPLACE(:COMMENT2,CHR(126),CHR(13))"
+COMMENT3                             NEXT  4000           CHARACTER            
+    Terminator string : '@@##@@'
+    SQL string for column : "REPLACE(:COMMENT3,CHR(126),CHR(13))"
+COMMENT4                             NEXT  4000           CHARACTER            
+    Terminator string : '@@##@@'
+    SQL string for column : "REPLACE(:COMMENT4,CHR(126),CHR(13))"
+COMMENT5                             NEXT  4000           CHARACTER            
+    Terminator string : '@@##@@'
+    SQL string for column : "REPLACE(:COMMENT5,CHR(126),CHR(13))"
+ETL_DATE_STARTED                     NEXT    19           DATE MM/DD/YYYY HH24:MI:SS
+    Terminator string : '@@##@@'
+ETL_DATE_ENDED                       NEXT    19           DATE MM/DD/YYYY HH24:MI:SS
+    Terminator string : '@@##@@'
+ETL_IND_CURRENT                      NEXT     *           CHARACTER            
+    Terminator string : '@@##@@'
+ETL_IND_DELETED                      NEXT     *           CHARACTER            
+    Terminator string : '@@##@@'
+ETL_BATCH_ID_INS                     NEXT     *           CHARACTER            
+    Terminator string : '@@##@@'
+ETL_BATCH_ID_END                     NEXT     *           CHARACTER            
+    Terminator string : '@@##@@'
+PIAT_FLG                             NEXT     *           CHARACTER            
+    Terminator string : '@@##@@'
+CHECKLIST_POTENTIAL_RISK             NEXT     *           CHARACTER            
+    Terminator string : '@@##@@'
+CHECKLIST_ACTUAL_RISK                NEXT     *           CHARACTER            
+    Terminator string : '@@##@@'
+D_CONTACT_PI_SK                      NEXT     *           CHARACTER            
+    Terminator string : '@@##@@'
+
+value used for ROWS parameter changed from 100000 to 9
+
+Table "JEDI_DM_RDQC"."F_VISIT_DETAILS":
+  19809990 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 251334 bytes(9 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:      19809990
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Tue Dec 29 15:55:51 2020
+Run ended on Tue Dec 29 19:50:48 2020
+
+Elapsed time was:     03:54:57.72
+CPU time was:         00:12:08.41
